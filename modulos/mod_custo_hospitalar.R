@@ -153,7 +153,7 @@ custo_hospitalar_Server <- function(id) {
 
 ##########################################################################################
 output$tabi1 <- DT::renderDataTable({
-setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   datatable(Sinistros_Rodovias,
                 filter = "top", 
@@ -176,7 +176,7 @@ setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
 
 ##### Teste 1 ######
 output$fonte11 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Rodovias=factor(Sinistros_Rodovias$Rodovias,
@@ -210,7 +210,7 @@ ggplotly(g10)
 
 #############################################################################################
 output$fonte12 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Tipos_Sinistros=factor(Sinistros_Rodovias$Tipos_Sinistros,
@@ -240,7 +240,7 @@ output$fonte12 <- renderPlotly({
 
 #############################################################################################
 output$fonte13 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Causas=factor(Sinistros_Rodovias$Causas,
@@ -272,7 +272,7 @@ output$fonte13 <- renderPlotly({
 #############################################################################################
 
 output$fonte14 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Período = factor(Sinistros_Rodovias$Período,
@@ -301,7 +301,7 @@ output$fonte14 <- renderPlotly({
 
 
 output$fonte15 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Mês = factor(Sinistros_Rodovias$Mês,
@@ -330,7 +330,7 @@ output$fonte15 <- renderPlotly({
 
 
 output$fonte16 <- renderPlotly({
-  setwd("C:/Users/mario Dhiego/Documents/DashBoard_Detran_2024/data")
+  setwd("C:/Users/usuario/Documents/Dashboard_Modulo_Sinistro_2024-main/Dashboard_Modulo_Sinistro_2024-main/data")
   Sinistros_Rodovias <- read_excel("Sinistros_Rodovias.xls")
   
   Sinistros_Rodovias$Ano = factor(Sinistros_Rodovias$Ano,

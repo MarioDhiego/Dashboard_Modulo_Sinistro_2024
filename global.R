@@ -39,7 +39,7 @@ library(sf)                                                                     
 library(sp)                                                                     # Fornece classes e métodos para análise de dados espaciais em R
 library(leaflet)
 library(raster)
-library(rgdal)
+#library(rgdal)
 library(leaflet.extras)
 library(leaflet.providers)
 #library(leaflet.minicharts)
